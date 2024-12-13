@@ -1,9 +1,8 @@
-## LSH FOR Scalable Product Duplicate Detection
-
+## LSH For Scalable Product Duplicate Detection
 This is the code for my final project for the course of Computer Science For Business Analytics at Erasmus University of Rotterdam (ESE). Briefly, in this assignment, I work with a dataset of 1,624 descriptions of televisions coming from four Webshops: Amazon.com, Newegg.com, Best-Buy.com, and TheNerds.net and I try to find th eproduct duplicates without using the modelId of the products. In my code, I first preprocess the data by normalizing the columns and selecting relevant features that I will compare. Then, I use MinHashing and LSH to find the potential duplicates pairs and I also apply the Multi-component Similarity Method (MSM) in order to cluster the products.
 
 ### Code Structure
-The code that generates the plots found in the report is located in the file `CS Assignment.ipynb`. The file `utils.py` contains helper functions related to data pre processing and evaluation. The file `minhash.py` contains all necessary functions to build the Minhash signature matrix. The file `msm.py` includes all methods needed to perform MSM. Finally, `lsh.py` contains the class that performs Locality Sensitive Hashing. Before running the code run `pip install -r requirements.txt` to install all necessary packages.
+The code that generates the plots found in the report is located in the file `evaluate.ipynb`. The file `utils.py` contains helper functions related to data pre processing and evaluation. The file `minhash.py` contains all necessary functions to build the Minhash signature matrix. The file `msm.py` includes all methods needed to perform MSM. Finally, `lsh.py` contains the class that performs Locality Sensitive Hashing. Before running the code run `pip install -r requirements.txt` to install all necessary packages.
 
 ### Implementation details of LSH 
 The LSH class consists of the following methos:
